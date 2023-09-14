@@ -1,0 +1,246 @@
+<!-- Declaração de que o documento é em HTML, marcando
+o início do código -->
+
+<!DOCTYPE html>
+
+<!-- Tag html lang: especifica o idioma da página-->
+<html lang="pt-BR">
+
+
+<!-- Tag head: não é visualizado no corpo (body) da página,
+armazena os metadados -->
+
+<head>
+
+    <!-- Metadado UTF-8: considera um conjunto de caracteres presente no idioma
+    Português (acentuação, por exemplo)-->
+    <meta charset="UTF-8">
+
+
+    <!-- Metadado que possibilita a visualização em navegador de dispositivo móvel,
+    mantendo a escala -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Referencia o arquivo CSS, colocar na tag head -->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Tag title: título da guia -->
+    <title>Corujas TI</title>
+
+</head>
+
+
+<!-- Tag body: Definir o corpo do documento (conteúdo a ser visualizado) -->
+
+<body>
+
+    <div id="conteiner">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&display=swap');
+        </style>
+
+        <!-- Cabeçalho da página -->
+        <header>
+
+            <!-- Tag nav: Cria um seção de menu (navigation) -->
+            <nav>
+                <!-- Tag ul: cria uma lista desordenada, enquanto a tag
+            ol cria uma lista ordenada -->
+                <ul id="menu">
+
+                    <!-- Tag li: determina cada item -->
+
+                    <!-- Tag a: possibilita que o texto seja clicável -->
+                    <!-- href: determina o redirecionamento da página -->
+                    <li><a href="#"> Início </a></li>
+                    <li><a href="#sobremim"> Sobre mim </a></li>
+                    <li><a href="#servicos"> Soluções em TI </a></li>
+                    <li><a href="contato.html"> Contato </a></li>
+
+
+
+
+                </ul>
+                <hr>
+            </nav>
+
+
+            <div class="apresentacao">
+
+                <div class="left">
+                    <img src="img/img5.png " width="35%" height="auto" title="bezzaoo, o corujinha que faz programa">
+                </div>
+
+                <div class="right">
+
+                    <h1><span>Desenvolvedor web</span></h1>
+                    <h2> Solções tecnológicas </h2>
+
+                    <div>
+
+                        <button class="btn btnContato"> Entre em contato </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <section id="sobremim">
+        <h2>Sobre mim</h2>
+
+        <div class="containerSobremim">
+
+            <div class="left">
+
+                <h4>Bernardo Freitas</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, facilis deleniti tempore dolorem
+                    ipsa illo dolores totam repellendus sapiente numquam. Praesentium unde exercitationem fuga
+                    voluptatibus earum blanditiis dolores ipsam ullam!</p>
+
+            </div>
+
+            <div class="right">
+
+                <!-- <iframe width="350" height="250" src="https://www.youtube.com/embed/GDeZetYSAzo"
+                    title="Freddie Dredd - Limbo (Lyrics)" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe> -->
+
+                <!-- <video controls autoplay height="350" width="400" >
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>-->
+
+                <div class="socialMedia">
+
+                    <div>
+                        <a href="https://api.whatsapp.com/send?phone=5511939515415&text=Ol%C3%A1%20Bernardo,%20eu%20vi%20o%20seu%20protif%C3%B3lio,%20podemos%20conversar%20?"
+                            target="_blank">
+
+                            <img src="img/redesSociais/whatsapp.png" alt="" width="35" height="auto">
+                    </div>
+
+                    <div>
+                        <p> (11) 94951-5415 </p>
+                    </div>
+                    </a>
+
+                </div>
+
+
+                <div class="socialMedia">
+
+                    <div>
+                        <a href="https://github.com/BernardosFreitas" target="_blank">
+
+                            <img src="img/redesSociais/github.png" alt="" width="35" height="auto">
+                    </div>
+                    <div>
+                        <p> https://github.com/BernardosFreitas </p>
+                    </div>
+
+                    </a>
+                </div>
+
+                <div class="socialMedia">
+                    <div>
+                        <a href="https://www.linkedin.com/in/bernardos-freitas" target="_blank">
+                            <img src="img/redesSociais/linkedin.png" alt="" width="35" height="auto">
+
+                    </div>
+
+                    <div>
+                        <p> https://www.linkedin.com/in/bernardos-freitas </p>
+                    </div>
+
+                    </a>
+                </div>
+
+
+                <div class="socialMedia">
+                    
+                    <div>
+                        <a href="mailto:bernardo.sfreitas1999@gmail.com">
+                            <img src="img/redesSociais/gmail.png" alt="" width="32" height="auto">
+                    </div>
+                    
+                    <div>
+                        <p> bernardo.sfreitas1999@gmail.com </p>
+                    </div>
+
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+    <section id="servicos">
+
+        <!--Inicio da seção de serviços em densenvolvimento-->
+        <h2>Desenvolvimento e implementação de serviços</h2>
+        <div class="conteinerServicos">
+
+            <div class="itemservicos1">
+
+                <img src="img/prototipacao/64px.png">
+                <h3> Prototipação de aplicações</h3>
+
+
+            </div>
+
+            <div class="itemservicos2">
+
+                <img src="img/bancoDeDados/48px.png">
+                <h3> Banco de dados</h3>
+
+
+
+            </div>
+
+
+            <div class="itemservicos1">
+
+
+                <img src="img/sistemaDesktop/64px.png">
+                <h3> Desenvolvimeto de sistemas Desktop</h3>
+
+
+            </div>
+
+            <div class="itemservicos2">
+
+                <img src="img/desenvolverSite/48px.png">
+                <h3> Desenvolvimento e hospedagem de sites</h3>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Seção para identificar o início do rodapé -->
+
+        <footer>
+
+
+        </footer>
+
+        <!--Fim do rodapé-->
+
+
+    </section>
+
+</body>
+
+</html>
