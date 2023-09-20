@@ -5,34 +5,29 @@
   font-family: "Roboto Mono";
 }
 
+/*
 #menu {
   display: flex;
   list-style: none;
-  padding: 25px;
+  text-align: center;
   justify-content: center;
 }
-
+*/
 #menu a {
   color: rgb(255, 255, 255);
   font-size: 15px;
-  text-decoration: none;
-  flex-direction: row;
   margin-right: 50px;
-  text-transform: uppercase;
+  flex-direction: row;
+  text-align: center;
 }
 
 #menu a:hover {
-  color: rgb(103, 112, 143);
-}
-
-hr {
-  opacity: 0.1;
-  margin-bottom: 25px;
+  color: rgb(24, 26, 44);
 }
 
 header {
   background: linear-gradient(
-    0deg,
+    90deg,
     rgba(37, 51, 101, 1) 0%,
     rgba(6, 9, 24, 1) 100%
   );
@@ -73,7 +68,7 @@ h2 {
   flex: 5;
   text-align: center;
   font-size: 15px;
-  padding-top: 2%;
+  padding-top: 3%;
 }
 
 .left img {
@@ -91,7 +86,7 @@ h2 {
 }
 
 .btnContato {
-  background-color: rgb(204, 25, 189);
+  background-color: rgb(25, 123, 204);
   color: rgb(255, 255, 255);
   margin-top: 20px;
 }
@@ -105,10 +100,10 @@ h2 {
 #sobremim h2 {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(204, 25, 189);
+  background-color: rgb(41, 86, 122);
   text-align: center;
-  color: aliceblue;
   font-size: 20px;
+  margin-bottom: 0px;
 }
 
 .containerSobremim {
@@ -118,10 +113,8 @@ h2 {
   padding: 2%;
 }
 
-.containerSobremim h4{
-
+.containerSobremim h4 {
   padding-bottom: 20px;
-
 }
 
 .containerSobremim .left {
@@ -144,10 +137,10 @@ video {
 #servicos h2 {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(204, 25, 189);
+  background-color: rgb(41, 86, 122);
   text-align: center;
-  color: aliceblue;
   font-size: 20px;
+  margin-bottom: 0px;
 }
 
 .conteinerServicos {
@@ -192,60 +185,101 @@ html {
 
 .itemservicos1:hover,
 .itemservicos2:hover {
-  background-color: rgba(64, 68, 95, 0.493);
+  background-color: rgba(41, 85, 122, 0.1);
   cursor: pointer;
-  
 }
 
 .socialMedia {
   display: flex;
+  /*padding-bottom: 2%;*/
 }
 
 .socialMedia img {
   padding-top: 10px;
 }
 
-.socialMedia a{
-
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-left: 20px;
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 12px;
-   
+.socialMedia a {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 12px;
 }
 
-.socialMedia a:hover p{
-
-    color: rgb(255, 0, 157);
-    
-
+#contato {
+  background-color: rgb(13, 19, 42);
+  padding-bottom: 10%;
+  padding-left: 30%;
 }
 
-/*
+.containerContato h2 {
+  background-color: rgb(41, 86, 122);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
 
-  
-  }
-  .itemservicos2 {
-    display:inline-block;
-    width: 20%;
-    border-style: solid;
-    
-  }
-  
-  .itemservicos3 {
-    display:inline-block;
-    width: 20%;
-    border-style: solid;
-    
-  
-  }
-  .itemservicos4 {
-    display:inline-block;
+form {
+  font-size: 15px;
+  max-width: 500px;
+  background: aliceblue;
+  padding: 20px;
+  border-radius: 5px;
+}
 
-    width: 20%;
-    border-style: solid;
-  }
-  
-*/
+input,
+textarea {
+  width: 200px;
+  padding: 10px;
+  color: steelblue;
+  margin-left: 20px;
+  margin-top: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 2px solid;
+}
+
+.navColor {
+
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    rgba(37, 51, 101, 1) 0%,
+    rgba(6, 9, 24, 1) 100%
+  );
+}
+
+.container-fluid {
+  margin-top: -8px;
+  margin-bottom: -8px;
+}
+
+.navbar {
+  border: 0.5 solid rgba(245, 222, 179, 0);
+}
+
+.navbar-toggler {
+  border: solid 1px transparent;
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28255, 255, 255,' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

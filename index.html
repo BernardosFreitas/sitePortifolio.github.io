@@ -21,12 +21,17 @@ armazena os metadados -->
     mantendo a escala -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Referencia o arquivo CSS, colocar na tag head -->
-    <link rel="stylesheet" href="style/style.css">
+
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- Tag title: título da guia -->
     <title>Corujas TI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Referencia o arquivo CSS, colocar na tag head -->
+    <link rel="stylesheet" href="style/style.css">
 
 </head>
 
@@ -41,42 +46,56 @@ armazena os metadados -->
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&display=swap');
         </style>
 
-        <!-- Cabeçalho da página -->
-        <header>
 
-            <!-- Tag nav: Cria um seção de menu (navigation) -->
-            <nav>
-                <!-- Tag ul: cria uma lista desordenada, enquanto a tag
-            ol cria uma lista ordenada -->
-                <ul id="menu">
 
-                    <!-- Tag li: determina cada item -->
-
-                    <!-- Tag a: possibilita que o texto seja clicável -->
-                    <!-- href: determina o redirecionamento da página -->
+        <!-- Tag a: possibilita que o texto seja clicável -->
+        <!-- href: determina o redirecionamento da página 
                     <li><a href="#"> Início </a></li>
                     <li><a href="#sobremim"> Sobre mim </a></li>
                     <li><a href="#servicos"> Soluções em TI </a></li>
-                    <li><a href="contato.html"> Contato </a></li>
+                    <li><a href="#contato"> Contato </a></li>-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid navColor">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav" id="menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobremim">Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Soluções em TI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
 
+        <header>
 
-
-                </ul>
-                <hr>
-            </nav>
 
 
             <div class="apresentacao">
 
                 <div class="left">
-                    <img src="img/img5.png " width="35%" height="auto" title="bezzaoo, o corujinha que faz programa">
+                    <img src="img/img5.png " width="38%" height="auto" title="bezzaoo, o corujinha que faz programa">
                 </div>
 
                 <div class="right">
 
                     <h1><span>Desenvolvedor web</span></h1>
-                    <h2> Solções tecnológicas </h2>
+                    <h2> Soluções tecnológicas </h2>
 
                     <div>
 
@@ -87,8 +106,11 @@ armazena os metadados -->
                 </div>
             </div>
 
-        </header>
+
     </div>
+    </header>
+
+    <!--Inicio da seção sobre mim-->
 
     <section id="sobremim">
         <h2>Sobre mim</h2>
@@ -114,7 +136,7 @@ armazena os metadados -->
                 <!-- <video controls autoplay height="350" width="400" >
                         <source src="video/video.mp4" type="video/mp4">
                     </video>-->
-
+                <!---->
                 <div class="socialMedia">
 
                     <div>
@@ -162,12 +184,12 @@ armazena os metadados -->
 
 
                 <div class="socialMedia">
-                    
+
                     <div>
                         <a href="mailto:bernardo.sfreitas1999@gmail.com">
                             <img src="img/redesSociais/gmail.png" alt="" width="32" height="auto">
                     </div>
-                    
+
                     <div>
                         <p> bernardo.sfreitas1999@gmail.com </p>
                     </div>
@@ -183,6 +205,8 @@ armazena os metadados -->
 
 
     </section>
+
+    <!--Fim da seção sobre mim-->
 
 
     <section id="servicos">
@@ -229,17 +253,67 @@ armazena os metadados -->
 
         </div>
 
-        <!-- Seção para identificar o início do rodapé -->
+    </section>
 
-        <footer>
+    <!--início da seção contato-->
+
+    <section id="contato">
 
 
-        </footer>
+        <div class="containerContato">
 
-        <!--Fim do rodapé-->
+            <!--Label: Rótulo do input-->
+            <!--Input: Entrada de dados-->
+            <!--Type: Tipo de dados que estamos solicitando no caso "text" -->
+            <!-- id: Trata-se do identificador-->
+            <!-- placeholder: Trata-se da mensagem que irá aparecer para o usuário indicando o dado que ele precisa fornecer-->
+            <!-- required: Campo obrigatório-->
+
+
+            <form name="formularioContato">
+                <h2>Entre em contato</h2>
+                <label for="nome">Nome: </label>
+                <input type="text" id="idNome" placeholder="Digite o seu nome" required="required" name="nome" />
+                <br>
+
+                <label for="tel">Celular: </label>
+                <input type="tel" id="idFone" placeholder="(99) 99999-9999" required="required" name="tel" />
+                <br>
+
+                <label for="email">E-mail: </label>
+                <input type="text" id="idemail" placeholder="seuemail@gmail.com" required="required" name="email" />
+                <br>
+
+                <textarea placeholder="Escreva dua mensagem"> </textarea>
+
+                <input type="submit" class="enviar" onclick="EnviarMensagem();" value="Enviar mensagem" />
+
+
+
+            </form>
+
+        </div>
+
 
 
     </section>
+    <!--fim da seção contato-->
+
+    <!-- Seção para identificar o início do rodapé -->
+
+    <footer>
+
+
+    </footer>
+
+    <!--Fim do rodapé-->
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
