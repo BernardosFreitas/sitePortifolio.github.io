@@ -54,17 +54,17 @@ armazena os metadados -->
                     <li><a href="#sobremim"> Sobre mim </a></li>
                     <li><a href="#servicos"> Soluções em TI </a></li>
                     <li><a href="#contato"> Contato </a></li>-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-            <div class="container-fluid navColor">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbar">
+                <div class="collapse navbar-collapse navColor" id="navbarNav">
                     <ul class="navbar-nav" id="menu">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#sobremim">Sobre mim</a>
@@ -75,7 +75,6 @@ armazena os metadados -->
                         <li class="nav-item">
                             <a class="nav-link" href="#contato">Contato</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -89,7 +88,7 @@ armazena os metadados -->
             <div class="apresentacao">
 
                 <div class="left">
-                    <img src="img/img5.png " width="38%" height="auto" title="bezzaoo, o corujinha que faz programa">
+                    <img src="img/img5.png " width="38%" height="auto" title="bezzao, o corujinha que faz programa">
                 </div>
 
                 <div class="right">
@@ -259,61 +258,147 @@ armazena os metadados -->
 
     <section id="contato">
 
+        <!--Label: Rótulo do input-->
+        <!--Input: Entrada de dados-->
+        <!--Type: Tipo de dados que estamos solicitando no caso "text" -->
+        <!-- id: Trata-se do identificador-->
+        <!-- placeholder: Trata-se da mensagem que irá aparecer para o usuário indicando o dado que ele precisa fornecer-->
+        <!-- required: Campo obrigatório-->
 
         <div class="containerContato">
 
-            <!--Label: Rótulo do input-->
-            <!--Input: Entrada de dados-->
-            <!--Type: Tipo de dados que estamos solicitando no caso "text" -->
-            <!-- id: Trata-se do identificador-->
-            <!-- placeholder: Trata-se da mensagem que irá aparecer para o usuário indicando o dado que ele precisa fornecer-->
-            <!-- required: Campo obrigatório-->
-
-
             <form name="formularioContato">
                 <h2>Entre em contato</h2>
-                <label for="nome">Nome: </label>
-                <input type="text" id="idNome" placeholder="Digite o seu nome" required="required" name="nome" />
-                <br>
 
-                <label for="tel">Celular: </label>
-                <input type="tel" id="idFone" placeholder="(99) 99999-9999" required="required" name="tel" />
-                <br>
+                <div class="displayContato">
 
-                <label for="email">E-mail: </label>
-                <input type="text" id="idemail" placeholder="seuemail@gmail.com" required="required" name="email" />
-                <br>
+                    <div class="dados">
+                        <label for="nome">Nome: </label>
+                        <input type="text" id="idNome" placeholder="Digite seu nome" required="required" name="nome" />
+                        <br>
 
-                <textarea placeholder="Escreva dua mensagem"> </textarea>
+                        <label for="celular">Celular: </label>
+                        <input type="tel" id="idFone" placeholder="(99) 99999-9999" name="celular" />
+                        <br>
 
-                <input type="submit" class="enviar" onclick="EnviarMensagem();" value="Enviar mensagem" />
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="idEmail" placeholder="seuemail@mail.com" name="email" />
+                    </div>
 
+                    <div class="mensagem">
+                        <label>Deixe sua mensagem: </label>
+                        <textarea></textarea>
+                        <br>
 
+                        <input type="submit" class="enviar" onclick="enviarMensagem();" value="Enviar mensagem" />
+                    </div>
+
+                    <div class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8065064986695!2d-46.70641572448957!3d-23.647099564748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50f8ac76dfdb%3A0xc160a87f059ec93d!2sSenac%20Largo%20Treze!5e0!3m2!1spt-BR!2sbr!4v1695048263368!5m2!1spt-BR!2sbr"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
 
             </form>
-
         </div>
-
-
-
     </section>
     <!--fim da seção contato-->
 
     <!-- Seção para identificar o início do rodapé -->
 
-    <footer>
 
 
+
+
+    <footer class="text-center text-lg-start text-white"></footer>
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">
+                        Bernardo Freitas
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora unde maiores optio
+                        accusamus accusantium consequatur id facere culpa delectus voluptas. At et eius deleniti
+                        repudiandae a reprehenderit labore ex accusamus!
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+                    <p><i class="fas fa-home mr-3"></i> São Paulo, SP - Brasil</p>
+                    <p><i class="fas fa-envelope mr-3"></i> bernardo.sfreitas@outlook.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +55 11 93951-5415</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppetcase mb-4 font-weight-bold">Redes Sociais</h6>
+
+                    <!-- Google -->
+                    <a class="redes" href="mailto:bernardosfreitas1999@gmail.com">
+                        <img src="img/redesSociais/gmail.png" alt="" width="20" height="auto"></a>
+
+                    <!-- Instagram -->
+                    <a class="redes" href="https://instagram.com/_bezzao?lgshid=NzZlODBkYWE4Ng==" target="_blank">
+                        <img src="img/redesSociais/instagram.png" alt="" width="20" height="auto"></a>
+
+                    <!-- Linkedin -->
+                    <a class="redes" href="https://www.linkedin.com/in/bernardos-freitas" target="_blank">
+                        <img src="img/redesSociais/linkedin.png" alt="" width="20" height="auto"></a>
+                    <!-- Github -->
+                    <a class="redes" href="https://github.com/BernardosFreitas" target="_blank">
+                        <img src="img/redesSociais/github.png" alt="" width="20" height="auto"></a>
+
+                    <!-- Whatsapp -->
+                    <a class="redes"
+                        href="https://api.whatsapp.com/send?phone=5511939515415&text=Ol%C3%A1%20Bernardo,%20eu%20vi%20o%20seu%20protif%C3%B3lio,%20podemos%20conversar%20?"
+                        target="_blank">
+
+                        <img src="img/redesSociais/whatsapp.png" alt="" width="20" height="auto"></a>
+                </div>
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgb(255, 255, 255)">
+        © 2023 Copyright: Bernardo Freitas
+    </div>
+    <!-- Copyright -->
     </footer>
-
-    <!--Fim do rodapé-->
-
-
+    <!-- Footer -->
+    <!-- Fim do rodapé -->
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+</body>
+
+
 
 </body>
 
